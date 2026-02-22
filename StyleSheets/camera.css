@@ -170,8 +170,8 @@ body {
 
 @media screen and (max-width: 768px) {
     .button {
-        font-size: 3.5vw;
+        font-size: 5vw;
         height: 10vw;
-        padding: 0.4rem 0.6rem 0.2rem 0.6rem;
+        padding: 0.4rem 1.2rem 0.2rem 1.2rem;
     }
 }
