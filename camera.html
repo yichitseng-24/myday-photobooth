@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyDay's Photo Booth</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/myday-photobooth/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="StyleSheets/camera.css" />
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">MYDAY PHOTOBOOTH</div>
+    </div>
+    <!-- Main Container -->
+    <div class="photobooth-container">
+        <div class="countdown-timer">3</div>
+        <canvas id="finalCanvas" width="1244" height="1866"></canvas>
+        <video id="liveVideo" autoplay playsinline muted></video>
+        <img class="frame-overlay" alt="frame overlay" />
+    </div>
+    <button class="button" id="capture-button">Ready!</button>
+    <!-- <p class="info">Any questions <a href="https://www.threads.com/@kikisownroom" target="_blank"> @kikisownroom</a></p>
+    -->
+    <!-- Main JS -->
+    <script src="Javascripts/camera.js"></script>
+
+
+</body>

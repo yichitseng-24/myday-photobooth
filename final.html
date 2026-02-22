@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyDay's Photo Booth</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/myday-photobooth/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="StyleSheets/final.css" />
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">MYDAY PHOTOBOOTH</div>
+    </div>
+    <!-- Main Container -->
+    <div class="heading-content">
+        <div class="sticker-container">
+            <p class="instruction">Add Stickers</p>
+            <div class="sticker-btns">
+                <button id="myday-btn" class="sticker-btn myday-btn">Add myday</button>
+                <button id="heart-btn" class="sticker-btn heart-btn">Add heart</button>
+                <button id="star-btn" class="sticker-btn star-btn">Add star</button>
+                <button id="sparkling-btn" class="sticker-btn sparkling-btn">Add sparkling</button>
+                <button id="clover-btn" class="sticker-btn clover-btn">Add clover</button>
+                <button id="reset" class="sticker-btn reset-btn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="canvasContainer">
+        <canvas id="finalCanvas" width="1244" height="1866"></canvas>
+    </div>
+    <div class="button-container">
+        <button class="button" id="dowload-button">Download</button>
+        <button class="button" id="home-button">Home</button>
+    </div>
+
+
+    <!-- Main JS -->
+    <script src="Javascripts/final.js"></script>
+
+</body>

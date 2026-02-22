@@ -1,0 +1,256 @@
+/* root variables */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* font */
+@font-face {
+    font-family: 'Solitreo-regular';
+    src: url('../Assets/myday-photobooth/font/Solitreo/Solitreo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('../Assets/myday-photobooth/font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Black';
+    src: url('../Assets/myday-photobooth/font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+
+
+.header-container {
+    width: 100%;
+    padding-top: 1.5%;
+    margin-bottom: 0.5rem;
+}
+
+.header {
+    font-family: Solitreo-regular, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.header {
+    cursor: pointer;
+}
+
+.text {
+    font-family: Solitreo-regular, sans-serif;
+    font-size: 2.1rem;
+    margin-bottom: 4%;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        font-size: 2vw;
+    }
+
+    .text {
+        font-size: 5vw;
+    }
+}
+
+.heading-content {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    width: 40vmin;
+}
+
+/* sticker container */
+.sticker-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 0.4vh;
+    margin-top: 0;
+    padding: 0;
+}
+
+.instruction {
+    font-family: Solitreo-regular, serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+/* sticker buttons container */
+.sticker-btns {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sticker-btns button {
+    cursor: pointer;
+}
+
+/* sticker buttons */
+.sticker-btn {
+    width: 12%;
+    border-radius: 50%;
+    aspect-ratio: 50/50;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    background-color: #000000;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0rem;
+    font-size: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.sticker-btn:hover {
+    transform: scale(1.05);
+}
+
+#reset {
+    background-color: #ffffff;
+    border: 1.5px solid #000000;
+
+}
+
+
+.clover-btn {
+    background-image: url("../Assets/myday-photobooth/finalpage/clover-btn.png");
+}
+
+.heart-btn {
+    background-image: url("../Assets/myday-photobooth/finalpage/heart-btn.png");
+}
+
+.myday-btn {
+    background-image: url("../Assets/myday-photobooth/finalpage/myday-btn.png");
+}
+
+.reset-btn {
+    background-image: url("../Assets/myday-photobooth/finalpage/reset-btn.png");
+}
+
+.sparkling-btn {
+    background-image: url("../Assets/myday-photobooth/finalpage/sparkling-btn.png");
+}
+
+.star-btn {
+    background-image: url("../Assets/myday-photobooth/finalpage/star-btn.png");
+}
+
+@media (max-width: 768px) {
+    .heading-content {
+        width: 75vw;
+    }
+}
+
+/* containers */
+#canvasContainer {
+    position: relative;
+    width: 40vmin;
+    max-width: 90vw;
+    aspect-ratio: 622/933;
+    overflow: hidden;
+    background: #e8e8e8;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    cursor: grab;
+}
+
+@media screen and (max-width: 768px) {
+    #canvasContainer {
+        width: 80vw;
+        max-width: 90vw;
+    }
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px
+}
+
+
+.button {
+    color: #000000;
+    font-family: Solitreo-regular, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0.8rem;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.56rem;
+    width: 6.5rem;
+    height: 3rem;
+    line-height: 0;
+    padding: 0.6rem 0.5rem 0.2rem 0.5rem;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background-color: #eaeaea;
+    transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .button {
+        font-size: 3.5vw;
+        width: 20vw;
+        height: 10vw;
+        padding: 0.4rem 0.6rem 0.2rem 0.6rem;
+    }
+}
+
+.info {
+    font-family: Inter-Regular, sans-serif;
+    font-size: 0.7rem;
+    position: fixed;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    text-decoration: underline;
+    color: #868686;
+    cursor: pointer;
+}

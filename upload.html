@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="Assets/myday-photobooth/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="StyleSheets/camera.css" />
+    <style>
+        /* hide the actual file input */
+        #uploadPhotoInput {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="header">MYDAY PHOTOBOOTH</div>
+    </div>
+
+    <div class="photobooth-container">
+        <canvas id="finalCanvas" width="1244" height="1866"></canvas>
+
+        <!-- hidden file input -->
+        <input type="file" id="uploadPhotoInput" accept="image/*" />
+
+        <img class="frame-overlay" alt="frame overlay" />
+    </div>
+
+    <button class="button" id="upload-button">Upload Photo</button>
+    <button class="button" id="ready-button" disabled style="display:none;">Ready</button>
+
+    <script src="Javascripts/upload.js"></script>
+</body>
+
+</html>
