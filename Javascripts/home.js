@@ -9,7 +9,8 @@ const PHOTOBOOTH_FRAME_INTERVAL = 200;
 const enterButton = document.getElementById('enter-button');
 const denimalzEl_1 = document.querySelector('.denimalz-mock-1');
 const denimalzEl_2 = document.querySelector('.denimalz-mock-2');
-const photoboothEl = document.querySelector('.photobooth-mock');
+//const photoboothEl = document.querySelector('.photobooth-mock');
+const photoboothImg = document.getElementById('photobooth-img');
 //const cameraBtn = document.getElementById('menu-camera-button');
 //const uploadBtn = document.getElementById('menu-upload-button');
 //const logoEl = document.querySelector('.logo');
@@ -26,17 +27,17 @@ let direction = 1;
 let lastFrameTime = 0;
 
 function animatePhotobooth(timestamp) {
-    if (!photoboothEl) return;
+    if (!photoboothImg) return;
 
     if (timestamp - lastFrameTime >= PHOTOBOOTH_FRAME_INTERVAL) {
         const frame = loadedFrames[currentFrame];
         if (frame.complete) {
-            photoboothEl.style.backgroundImage = `url('${frame.src}')`;
+            photoboothImg.src = frame.src;
 
             currentFrame += direction;
             if (currentFrame >= loadedFrames.length - 1) {
-                direction *= -1;
-                //return;
+                //direction *= -1;
+                return;
             }
             lastFrameTime = timestamp;
         }

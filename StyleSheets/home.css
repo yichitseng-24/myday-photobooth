@@ -116,6 +116,7 @@ body {
 
 /* photobooth frame */
 
+/*
 .photobooth-mock {
     z-index: 2;
     width: calc((383.63/600) * 100%);
@@ -123,6 +124,15 @@ body {
     background-image: url('../Assets/myday-photobooth/homepage/animated-photobooth-mock/1.png');
     opacity: 1;
     transition: opacity 0.15s;
+}*/
+
+.photobooth-mock {
+    z-index: 2;
+    width: calc((383.63/600) * 100%);
+    height: calc((480/513) * 100%);
+    object-fit: contain;
+    /* 重要：保持比例 */
+    display: block;
 }
 
 
