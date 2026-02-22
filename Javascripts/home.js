@@ -1,5 +1,5 @@
 const PHOTOBOOTH_FRAMES = Array.from({ length: 16 }, (_, i) =>
-    `Assets/myday-photobooth/homepage/animated-photobooth-mock/${i + 1}.jpg`
+    `Assets/myday-photobooth/homepage/animated-photobooth-mock/${i + 1}.png`
 );
 
 // animation interval
