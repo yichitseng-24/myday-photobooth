@@ -33,12 +33,11 @@ function animatePhotobooth(timestamp) {
         if (frame.complete) {
             photoboothEl.style.backgroundImage = `url('${frame.src}')`;
             photoboothEl.style.transition = 'opacity 0.15s';
-            photoboothEl.style.opacity = 1;
+            //photoboothEl.style.opacity = 1;
 
             currentFrame += direction;
             if (currentFrame >= loadedFrames.length - 1) {
                 return;
-                //currentFrame = 0;  從頭開始再來
             }
             lastFrameTime = timestamp;
         }
