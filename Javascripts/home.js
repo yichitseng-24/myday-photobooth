@@ -3,7 +3,7 @@ const PHOTOBOOTH_FRAMES = Array.from({ length: 16 }, (_, i) =>
 );
 
 // animation interval
-const PHOTOBOOTH_FRAME_INTERVAL = 100;
+const PHOTOBOOTH_FRAME_INTERVAL = 200;
 
 // dom references DOM (Document Object Model)
 const enterButton = document.getElementById('enter-button');
@@ -32,12 +32,11 @@ function animatePhotobooth(timestamp) {
         const frame = loadedFrames[currentFrame];
         if (frame.complete) {
             photoboothEl.style.backgroundImage = `url('${frame.src}')`;
-            photoboothEl.style.transition = 'opacity 0.15s';
-            photoboothEl.style.opacity = 1;
 
             currentFrame += direction;
             if (currentFrame >= loadedFrames.length - 1) {
-                return;
+                direction *= -1;
+                //return;
             }
             lastFrameTime = timestamp;
         }
