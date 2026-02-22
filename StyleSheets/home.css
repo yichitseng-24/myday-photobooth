@@ -97,7 +97,7 @@ body {
 /* 響應式設計*/
 @media screen and (max-width: 768px) {
     .home-container {
-        width: 90vw;
+        width: 100vw;
     }
 
     .photobooth-container {
