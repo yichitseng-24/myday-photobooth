@@ -171,7 +171,6 @@ body {
 @media screen and (max-width: 768px) {
     .button {
         font-size: 3.5vw;
-        width: 20vw;
         height: 10vw;
         padding: 0.4rem 0.6rem 0.2rem 0.6rem;
     }
