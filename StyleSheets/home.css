@@ -122,6 +122,7 @@ body {
     height: calc((480/513) * 100%);
     background-image: url('../Assets/myday-photobooth/homepage/animated-photobooth-mock/1.jpg');
     opacity: 1;
+    transition: opacity 0.15s;
 }
 
 

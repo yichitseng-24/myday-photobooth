@@ -32,7 +32,7 @@ function animatePhotobooth(timestamp) {
         const frame = loadedFrames[currentFrame];
         if (frame.complete) {
             photoboothEl.style.backgroundImage = `url('${frame.src}')`;
-            photoboothEl.style.transition = 'opacity 0.15s';
+            //photoboothEl.style.transition = 'opacity 0.15s';
             //photoboothEl.style.opacity = 1;
 
             currentFrame += direction;
