@@ -3,7 +3,7 @@ const PHOTOBOOTH_FRAMES = Array.from({ length: 16 }, (_, i) =>
 );
 
 // animation interval
-const PHOTOBOOTH_FRAME_INTERVAL = 200;
+const PHOTOBOOTH_FRAME_INTERVAL = 100;
 
 // dom references DOM (Document Object Model)
 const enterButton = document.getElementById('enter-button');
