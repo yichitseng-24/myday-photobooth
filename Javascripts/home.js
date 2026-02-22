@@ -45,7 +45,12 @@ function animatePhotobooth(timestamp) {
     requestAnimationFrame(animatePhotobooth);
 }
 
-requestAnimationFrame(animatePhotobooth);
+window.addEventListener('load', () => {
+    // 確保所有圖片資源都已經加載完畢後，再啟動動畫
+    setTimeout(() => {
+        requestAnimationFrame(animatePhotobooth);
+    }, 100);
+});
 
 
 function addSafeNavigation(button, url) { //id
